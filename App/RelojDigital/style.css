@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/29366-1920x1080.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+.wrap{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget{
+    width: 60%;
+    margin: 32px;
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 16px;
+}
+
+.fecha{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 7px;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 7px;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj .caja-segundos{
+    display: inline-block;
+}
+
