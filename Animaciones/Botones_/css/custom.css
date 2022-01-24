@@ -1,0 +1,1120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+  width: 90%;
+}
+
+
+
+/*------------ BOTON 1 ------------*/
+
+.btn-1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: 0.2s;
+  color: #fff;
+  text-decoration: none;
+  width: 150px;
+  height: 35px;
+  padding-top: 10px;
+  margin-bottom: 1rem;
+  
+}
+
+.btn-1:hover {
+  background: #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+  transition-delay: 1s;
+}
+
+.btn-1 span {
+  position: absolute;
+  display: block;
+}
+
+.btn-1 #span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a945c7);
+}
+
+.btn-1:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+.btn-1 #span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #a945c7);
+}
+
+.btn-1:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.btn-1 #span2 {
+  right: 0;
+  top: -100%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, #a945c7);
+}
+
+.btn-1:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.btn-1 #span4 {
+  left: 0;
+  bottom: -100%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, #a945c7);
+}
+
+.btn-1:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/*------------ FIN BOTON 1 ------------*/
+
+
+
+/*------------ BOTON 2 ------------*/
+
+.btn-2 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: 0.2s;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  width: 150px;
+  height: 35px;
+  padding-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.btn-2 span {
+  position: absolute;
+  display: block;
+}
+
+.btn-2 #span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c76e45);
+}
+
+.btn-2:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+.btn-2 #span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #c76e45);
+}
+
+.btn-2:hover #span3 {
+  right: 100%;
+  transition: 1s;
+}
+
+.btn-2 #span2 {
+  right: 0;
+  top: -100%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, #c76e45);
+}
+
+.btn-2:hover #span2 {
+  top: 100%;
+  transition: 1s;
+}
+
+.btn-2 #span4 {
+  left: 0;
+  bottom: -100%;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, #c76e45);
+}
+
+.btn-2:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+}
+
+/*------------ FIN BOTON 2 ------------*/
+
+
+
+/*------------ BOTON 3 ------------*/
+
+
+.btn-3 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: 0.2s;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  width: 150px;
+  height: 35px;
+  padding-top: 10px;
+  margin-bottom: 1rem;
+}
+
+
+.btn-3:hover {
+  background: #3937ac;
+  box-shadow: 0 0 10px #3937ac, 0 0 40px #3937ac, 0 0 80px #3937ac;
+  transition-delay: 0.7s;
+}
+
+.btn-3 span {
+  position: absolute;
+  display: block;
+}
+
+.btn-3 #span2 {
+  right: 0;
+  top: -100%;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(180deg, transparent, #3937ac);
+}
+
+.btn-3:hover #span2 {
+  top: 100%;
+  transition: 1s;
+}
+/*------------ FIN BOTON 3 ------------*/
+
+
+
+/*------------ BOTON 4 ------------*/
+
+.btn-4 {
+  border-radius: 4px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  text-align: center;
+  width: 150px;
+  height: 35px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+
+.btn-4:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-4:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+  background-color: #f36615;
+  color: #000;
+}
+
+.btn-4:hover:after {
+  opacity: 1;
+  right: 25px;
+  color: #000;
+}
+
+/*------------ FIN BOTON 4 ------------*/
+
+
+
+/*------------  BOTON 5 ------------*/
+
+.btn-5{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.2s;
+    color: #fff;
+    text-decoration: none;
+    width: 150px;
+    height: 35px;
+    padding-top: 10px; 
+    margin-bottom: 1rem;
+}
+
+.btn-5:hover{
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.527),  rgb(255, 255, 255) , rgba(255, 255, 255, 0.521));
+    animation:slidebg 2s linear infinite;
+    color: #000;
+  }
+
+  @keyframes slidebg {
+    to {
+      background-position:50vw;
+    }
+  }
+
+
+/*------------ FIN BOTON 5 ------------*/
+
+
+
+/*------------  BOTON 6 ------------*/
+
+.btn-6 {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  width: 150px;
+  height: 35px;
+  margin-bottom: 1rem;
+}
+
+
+.btn-6::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+
+.btn-6:hover::before { /*linea supe e inferior*/
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-6::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-right: rgba(255, 255, 255, 0.5);
+  border-right-style: solid;
+  border-left-style: solid;
+  border-right-width: 1px;
+  border-left-width: 1px;
+}
+.btn-6:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+/*------------ FIN BOTON 6 ------------*/
+
+
+/*------------ BOTON 7 ------------*/
+
+.btn-7 {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  width: 150px;
+  height: 35px;
+  margin-bottom: 1rem;
+}
+
+.btn-7::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.btn-7::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.5s;
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.btn-7:hover::before {
+  transform: rotate(-20deg);
+  background-color: rgba(255, 0, 0, 0);
+}
+.btn-7:hover::after {
+  transform: rotate(20deg);
+  background-color: rgba(255,255,255,0);
+}
+
+/*------------ FIN BOTON 7 ------------*/
+
+
+/*------------ FIN BOTON 8 ------------*/
+
+
+.efecto {
+  padding: 1.5rem 0;
+  filter: url('#goo');
+}
+
+.btn-8 {
+  text-align: center;
+  background: white;
+  color: black;
+  padding: 14px 45px;
+  position: relative;
+  text-decoration: none;
+  
+}
+
+.btn-8:before,
+.btn-8:after {
+  width: 4.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background:white;
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.btn-8:before {
+  top: -25%;
+  left: 20%;
+}
+
+.btn-8:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.btn-8:hover:before,
+.btn-8:hover:after {
+  transform: none;
+}
+
+/*------------ FIN BOTON 8 ------------*/
+
+
+/*------------ BOTON 9 ------------*/
+
+.btn-9{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 14px 45px;
+  transition: 1s all ease;
+}
+
+.btn-9::before{
+  background: rgb(189, 2, 2);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease; 
+}
+
+.btn-9::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn-9:hover::before{
+  width: 100%;
+}
+
+/*------------ FIN BOTON 9 ------------*/
+
+
+/*------------ BOTON 10 ------------*/
+
+.btn-10{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 14px 45px;
+  transition: 1s all ease;
+  margin-bottom: 1rem;
+  
+}
+
+.btn-10::before{
+  background: rgb(189, 2, 2);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn-10::before{
+  width: 100%;
+  height: 0%;
+}
+
+.btn-10:hover::before{
+  height: 100%;
+}
+
+/*------------ FIN BOTON 10 ------------*/
+
+
+/*------------ BOTON 11 ------------*/
+.btn-11{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 14px ;
+  transition: 1s all ease;
+  display: block;
+  overflow: hidden;
+  margin: 1rem 4rem;
+}
+
+.btn-11::before{
+  background: rgb(189, 2, 2);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn-11::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.btn-11:hover::before{
+  height: 500%;
+
+}
+
+/*------------ FIN BOTON 11 ------------*/
+
+
+/*------------ BOTON 12 ------------*/
+
+.btn-12{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding: 14px ;
+  transition: 1s all ease;
+  display: block;
+  overflow: hidden;
+  margin: 1rem 4rem;
+  border: 2px solid #fff;
+}
+
+.btn-12::before{
+  background: rgb(189, 2, 2);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn-12::before{
+  width: 100%;
+  height: 0%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.btn-12:hover::before{
+  height: 500%;
+
+}
+
+/*------------ FIN BOTON 12 ------------*/
+
+
+/*------------ BOTON 13 ------------*/
+
+.brillo-hover {
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgb(0, 0, 0);
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  
+}
+
+.brillo-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #002bff, #7a00ff, #ff00c8);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: brillo 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.brillo-hover:active {
+  color: #000
+}
+
+.brillo-hover:active:after {
+  background: transparent;
+}
+
+.brillo-hover:hover:before {
+  opacity: 1;
+}
+
+.brillo-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes brillo {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/*------------ FIN BOTON 13 ------------*/
+
+
+/*------------ BOTON 14 ------------*/
+
+.btn-14 {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  text-decoration: none; 
+  font-size: 20px;
+  border-radius: 48px;
+  border-color: #0b7560;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to left, rgba(219, 176, 126, 0.6), rgba(219, 176, 126, 0.6) 5%, #0b7560 5%, #0b7560 10%, rgba(219, 176, 126, 0.6) 10%, rgba(219, 176, 126, 0.6) 15%, #0b7560 15%, #0b7560 20%, rgba(219, 176, 126, 0.6) 20%, rgba(219, 176, 126, 0.6) 25%, #246659 25%, #0b7560 30%, rgba(219, 176, 126, 0.6) 30%, rgba(219, 176, 126, 0.6) 35%, #0b7560 35%, #0b7560 40%, rgba(219, 176, 126, 0.6) 40%, rgba(219, 176, 126, 0.6) 45%, #0b7560 45%, #0b7560 50%, rgba(219, 176, 126, 0.6) 50%, rgba(219, 176, 126, 0.6) 55%, #0b7560 55%, #0b7560 60%, rgba(219, 176, 126, 0.6) 60%, rgba(219, 176, 126, 0.6) 65%, #0b7560 65%, #0b7560 70%, rgba(219, 176, 126, 0.6) 70%, rgba(219, 176, 126, 0.6) 75%, #0b7560 75%, #0b7560 80%, rgba(219, 176, 126, 0.6) 80%, rgba(219, 176, 126, 0.6) 85%, #0b7560 85%, #0b7560 90%, rgba(219, 176, 126, 0.6) 90%, rgba(219, 176, 126, 0.6) 95%, #0b7560 95%, #0b7560 100%);
+  background-position: 0 0;
+  background-size: 100%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-14:hover {
+  background-position: 100px;
+}
+
+/*------------ FIN BOTON 14 ------------*/
+
+
+
+/*------------ BOTON 15 ------------*/
+
+.btn-15 li {
+  list-style-type: none;
+ 
+}
+
+.btn-15 li {
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  line-height: 36px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin-left: 61px;
+}
+
+.btn-15 li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(255, 11, 11);
+  transform: translateY(150%);
+  border-radius: 30%;
+  border: 1px solid rgb(252, 19, 19);
+  right: calc((var(--n) - 1) * 25%);
+  
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  
+  z-index: -1;
+}
+
+.btn-15 li:hover {
+  color: #fff;
+}
+
+.btn-15 li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.btn-15 li span:nth-child(1) {
+  --n: 1;
+}
+
+.btn-15 li span:nth-child(2) {
+  --n: 2;
+}
+
+.btn-15 li span:nth-child(3) {
+  --n: 3;
+}
+
+.btn-15 li span:nth-child(4) {
+  --n: 4;
+}
+
+.btn-15 li span:nth-child(5) {
+  --m: 5;
+}
+
+.btn-15 li span:nth-child(6) {
+  --m: 6;
+}
+
+.btn-15 li span:nth-child(7) {
+  --m: 7;
+}
+
+.btn-15 li span:nth-child(8) {
+  --m: 8;
+}
+
+
+/*------------ FIN BOTON 15 ------------*/
+
+
+/*------------ BOTON 16 ------------*/
+.btn-16 li {
+  list-style-type: none;
+ 
+}
+
+.btn-16 li {
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  line-height: 36px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin-left: 61px;
+}
+
+.btn-16 li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: rgb(255, 11, 11);
+  transform: translateX(500%);
+  border: 1px solid rgb(252, 19, 19);
+  right: calc((var(--n) - 1) * 35%);
+  
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  
+  z-index: -1;
+}
+
+.btn-16 li:hover {
+  color: #fff;
+}
+
+.btn-16 li:hover span {
+  transform: translateX(0) scale(2);
+}
+
+.btn-16 li span:nth-child(1) {
+  --n: 1;
+}
+
+.btn-16 li span:nth-child(2) {
+  --n: 2;
+}
+
+.btn-16 li span:nth-child(3) {
+  --n: 3;
+}
+
+.btn-16 li span:nth-child(4) {
+  --n: 4;
+}
+/*------------ FIN BOTON 16 ------------*/
+
+/*------------ BOTON 17 ------------*/
+
+
+.btn-17 li {
+  list-style-type: none;
+}
+
+.btn-17 li {
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+  line-height: 36px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin-left: 61px;
+  border:2px solid #fff;
+}
+
+.btn-17 li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  transform: translateX(500%);
+  left: calc((var(--n) - 1) * 31%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * .2s);
+  z-index: -1;
+  
+}
+
+.btn-17 li:hover {
+  color: #000;
+}
+
+.btn-17 li:hover span {
+  transform: translateX(0) scale(2);
+  
+}
+
+.btn-17 li span:nth-child(1) {
+  --n: 1;
+  background-color: blue;
+}
+
+.btn-17 li span:nth-child(2) {
+  --n: 2;
+  background-color: red;
+
+}
+
+.btn-17 li span:nth-child(3) {
+  --n: 3;
+  background-color: yellow;
+
+}
+
+.btn-17 li span:nth-child(4) {
+  --n: 4;
+  background-color: green;
+
+}
+
+/*------------ FIN BOTON 17 ------------*/
+
+
+/*------------ BOTON 18 ------------*/
+
+.btn-18 {
+  position: relative;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.btn-18::after, .btn-18::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: skewX(30deg);
+  transition: all 0.5s cubic-bezier(0.68, -1, 1, 1.55);
+  z-index: -2;
+}
+
+.btn-18::before {
+  background-color: #fff;
+  top: -0.5rem;
+  left: 0rem;
+}
+
+.btn-18::after {
+  background-color: rgb(119, 118, 118);
+  top: 0.5rem;
+  left: 5.1rem;
+}
+
+.btn-18:hover::before, .btn-18:hover::after {
+  top: 0;
+  transform: skewx(0deg);
+}
+
+.btn-18:hover::after {
+  left: 0rem;
+}
+
+.btn-18:hover::before {
+  left: 4rem;
+}
+
+/*------------ FIN BOTON 18 ------------*/
+
+/*------------ BOTON 19 ------------*/
+@keyframes animacionTop{
+	 from {
+		 transform: translate(8rem, 0%);  /*Punto der circulo gris*/
+	}
+	 to {
+		 transform: translate(-1rem, 0%);  /*Punto izq circulo gris*/
+	}
+}
+ @keyframes animacionBtm {
+	 from {
+		 transform: translate(-11.5rem, 0%); /*Punto izq circulo rojo*/
+	}
+	 to {
+		 transform: translate(-3rem, 0%);  /*Punto der circulo rojo*/
+	}
+}
+
+
+ button.btn-19 {
+	 text-decoration: none;
+	 border: none;
+	 position: relative;
+	 padding: 1rem 2.5rem;
+	 background:transparent;
+	 outline: none;
+	 color: #fff;
+   font-size: 15px;
+	
+}
+
+/*Circulos*/
+ button.btn-19::after, button.btn-19::before {
+	 
+	 content: "";
+	 position: absolute;
+	 height: 30%;
+	 width: 10%;
+	 transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	 z-index: -2;
+	 border-radius: 50%;
+}
+
+/*Circulo gris*/
+ button.btn-19::before {
+	 border: 0;
+	 background-color: #5f5958;
+	 top: -0.75rem;
+	 left: 0.6rem;
+	 animation: animacionTop 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s infinite alternate;
+}
+
+/*Circulo rojo*/
+ button.btn-19::after {
+	 background-color: #e74c3c;
+	 top: 3rem;
+	 left: 11.2rem;
+	 animation: animacionBtm 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s infinite alternate;
+}
+
+ button.btn-19:hover {
+	 color: white;
+   
+   
+}
+
+/* Transformar circulos en cuadrados*/
+ button.btn-19:hover::before, button.btn-19:hover::after {
+	 top: 5px;
+	 height: 35px;
+	 width: 150px;
+	 border-radius: 0;
+	 animation: none;
+}
+
+/*Cuadrado rojo*/
+ button.btn-19:hover::after {
+	 left: -1rem;
+}
+
+/*Cuadrado gris*/
+ button.btn-19:hover::before { 
+	 top: 0.8rem;
+	 left: 0.35rem;
+}
+ 
+/*------------ FIN BOTON 19 ------------*/
+
+/*------------ BOTON 20 ------------*/
+@keyframes animacionT{
+  from {
+    transform: translate(-2.5rem, 0%); 
+ }
+  to {
+    transform: translate(-5.5rem, 0%);  
+ }
+}
+@keyframes animacionB{
+  from {
+    transform: translate(-5.5rem, 0%);
+ }
+  to {
+    transform: translate(-3rem, 0%); 
+ }
+}
+
+
+.btn-20 {
+  text-decoration: none;
+  border: 2px solid ;
+  position: relative;
+  padding: 1rem;
+  background:transparent;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.btn-20::before {
+  position: absolute;
+  content: ">";
+  font-size: 2rem;
+  top: .4rem;
+  right: 2.9rem;
+  animation: animacionT 1s ease 0.25s infinite alternate;
+}
+
+.btn-20::after {
+  position: absolute;
+  content: "<";
+  left: 11rem;
+  top: .4rem;
+  font-size: 2rem;
+  animation: animacionB 1s ease 0.25s infinite alternate;
+}
+
+.btn-20:hover::after {
+  left: .5rem;
+}
+
+.btn-20:hover::before { 
+ left: 11.7rem;
+ 
+}
+
+/*------------ FIN BOTON 20 ------------*/
+
+/*------------ BOTON 21 ------------*/
+
+/*------------ FIN BOTON 21 ------------*/
