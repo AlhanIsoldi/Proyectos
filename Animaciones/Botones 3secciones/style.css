@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.contenedor {
+  display: flex;
+  margin-right: 10rem;
+}
+
+.btn-efecto {
+  transform: translateX(0%);
+  transition: 0.8s;
+  background-color: rgb(172, 34, 0);
+  width: 10rem;
+}
+.btn-efecto-dos {
+  transform: translateX(100%);
+  transition: 0.8s;
+  background-color: rgb(172, 34, 0);
+}
+.btn-efecto-tres {
+  transform: translateX(200%);
+  transition: 0.7s;
+  background-color: rgb(172, 34, 0);
+}
+.btn {
+  width: 10rem;
+  right: -10rem;
+  position: relative;
+  background-color: rgb(172, 34, 0);
+  border-radius: 0.7rem;
+  z-index: 0;
+}
+a {
+  text-decoration: none;
+  z-index: 1;
+}
+.boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  color: gray;
+  background-color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+.boton:last-child {
+  border-radius: 0 0.7rem 0.7rem 0;
+}
+.boton:nth-child(2) {
+  border-radius: 0.7rem 0 0 0.7rem;
+}
